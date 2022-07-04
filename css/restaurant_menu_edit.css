@@ -1,0 +1,34 @@
+main{
+    display: block;
+}
+
+#menus{
+    margin-top: 2em;
+}
+
+main > h1{
+    margin: 0;
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
+    color: rgb(181, 14, 14);
+}
+
+form{
+    max-width: 40em;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+form button[type="submit"]{
+    height: 3em;
+}
+
+h1:first-of-type{
+    color: black;
+}
+
+.list ul a:hover{
+    box-shadow: none;
+    transform: none;
+}

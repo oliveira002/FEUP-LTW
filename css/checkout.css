@@ -1,0 +1,178 @@
+*{
+    font-family: 'Open Sans', 'Raleway', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-bottom: 0.5em;
+}
+header h1 {
+    margin-left: 3.2em;
+}
+
+
+#options {
+    margin-left: auto;
+}
+
+#options a {
+    color: white;
+}
+
+.wrapper1 {
+    margin-top: 2em;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin-left: 7.2em;
+    padding-right: 2em;
+}
+
+.container ul li {
+    list-style: none;
+}
+.nav {
+    width: 200px;
+    max-width: 200px;
+    background-color: white;
+    border: none;
+    padding: 1.5em 5em 1.5em 0.8em;
+}
+
+.nav a {
+    font-size: 16px;
+}
+
+.nav:hover {
+    background-color: #f1f0f0;
+}
+
+#personPic {
+    display: flex;
+    padding-bottom: 0.5em;
+}
+
+.order {
+    padding-top: 1.25em;
+    padding-right: 1em;
+}
+
+#shortInfo {
+    display: block;
+    word-wrap: break-word;
+}
+#personPic img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.5px 4px;
+}
+#foodPic img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.5px 4px;
+}
+#foodPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    margin-left: 2em;
+
+}
+
+.profile {
+    display: block;
+    flex-direction: row;
+    padding-right: 1em;
+}
+
+#prodInfo {
+    padding-left: 0.5em;
+    padding-top: 2.3em;
+    word-wrap: break-word;
+    width: 200px;
+}
+
+#price {
+    padding-top: 0.25em;
+    padding-left: 4.7em;
+    font-weight: bold;
+}
+
+#shortInfo{
+    padding-left: 1em;
+    padding-top: 1em;
+    word-wrap: break-word;
+    width: 200px;
+}
+
+.item_description{
+    width: 100%;
+    text-align: left;
+    margin: .2em;
+}
+
+#item_title{
+    font-weight: bold;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+.order img {
+    border-radius: 12px;
+}
+
+.picBlock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#end {
+    font-weight: bold;
+    border-top: dashed 2px rgba(0, 0, 0, 0.10);
+}
+
+.btn {
+    padding-top: 0.5em;
+    padding-left: 1em;
+}
+
+.btn button {
+    background-color: #000000;
+    width: 150px;
+    max-width: 200px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.6em;
+    margin-bottom: 1em;
+}
+
+.td button{
+    width: 100%;
+    font-size: 1em;
+    margin: 0;
+    padding: .5em;
+}
+
+main{
+    display: block;
+}
+
+.table > .th.tr{
+    margin-top: 1em;
+    background-color: #3a3a3a;
+    color: white;
+    font-size: 1em;
+}

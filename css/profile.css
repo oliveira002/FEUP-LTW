@@ -1,0 +1,511 @@
+*{
+    font-family: 'Open Sans', 'Raleway', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+}
+
+body, html{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+body header {
+    background: black;
+    padding: 0 1em;
+    height: 5em;
+    box-shadow: rgba(75, 75, 75, 0.2) 0px 0.5px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+}
+
+#leftHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+#options {
+    display: flex;
+    flex-direction: row;
+}
+
+#options li {
+    padding-right: 2em;
+}
+
+.header {
+    padding-bottom: 0.5em;
+}
+header h1 {
+    margin-left: 3.2em;
+}
+
+header h1 a {
+    color: white;
+}
+
+#options {
+    margin-left: auto;
+}
+
+#options a {
+    color: white;
+}
+
+.container {
+    margin-left: 1em;
+    padding-right: 2em;
+}
+
+.container ul li {
+    list-style: none;
+}
+.nav {
+    width: 200px;
+    max-width: 200px;
+    background-color: white;
+    border: none;
+    padding: 1.5em 5em 1.5em 0.8em;
+}
+
+.nav a {
+    font-size: 16px;
+}
+
+.nav:hover {
+    background-color: #f1f0f0;
+}
+
+#personPic {
+    display: flex;
+}
+
+#shortInfo {
+    display: block;
+}
+
+#messages{
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+    background-color: whitesmoke;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+#shortInfo form input::file-selector-button {
+    display: none;
+}
+#personPic #person {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.5px 4px;
+}
+
+#pic {
+    display: flex;
+}
+.profile {
+    display: block;
+    flex-direction: row;
+    padding-right: 1em;
+}
+
+#prodInfo {
+    padding-left: 0.5em;
+    padding-top: 2.3em;
+    word-wrap: break-word;
+    width: 200px;
+}
+
+#price {
+    padding-top: 0.25em;
+    padding-left: 4.7em;
+    font-weight: bold;
+}
+
+#shortInfo{
+    padding-left: 1em;
+    padding-top: 1em;
+    word-wrap: break-word;
+    width: 200px;
+}
+
+.updateInfo {
+    padding-top: 1em;
+}
+
+.data {
+    margin-bottom: 0.5em;
+}
+
+.header2nd {
+    padding-bottom: 0.2em;
+}
+
+#title {
+    padding-top: 0.6em;
+}
+
+.formProf h2 {
+    font-size: 18px;
+}
+.formProf h1,h3{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.formData{
+    padding: 0.90em;
+    width: 240px;
+    max-width: 240px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f7f7f7;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.5px 4px;
+}
+
+.formData:focus {
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.5px 4px;
+}
+
+.btn {
+    padding-top: 0.5em;
+}
+.btn button {
+    background-color: #000000;
+    width: 240px;
+    max-width: 240px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.6em;
+    margin-bottom: 1em;
+}
+
+.btn button:hover {
+    background-color: #2a2a2a;
+}
+
+footer {
+    background-color: #ededed;
+    color: black;
+    height: 4em;
+    line-height: 4em;
+    padding-left: 1em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.recentOrders {
+    width: 100%;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.item_description{
+    width: 100%;
+    text-align: left;
+    margin: .2em;
+}
+
+#item_title{
+    font-weight: bold;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+.order {
+    display: flex;
+    padding-right: 0.5em;
+}
+
+.order button {
+    transition: transform .2s, box-shadow .2s;
+    border-radius: 1em;
+    margin-top: 0.5em;
+    display: flex;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.order img {
+    border-radius: 12px;
+    object-fit: cover;
+}
+.order button a:hover, .order button:hover, .specOrder button a:hover, .specOrder button:hover{
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.32) 0.5px 0.5px 4px;
+}
+
+.picBlock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#restInfo {
+    padding-left: 1em;
+    padding-top: 2.3em;
+    word-wrap: break-word;
+    width: 150px;
+}
+
+#seeMore a{
+    padding-top: 0.5em;
+    font-weight: bold;
+    padding-left: 16em;
+}
+
+#seeMore a:hover {
+    color:#2a2a2a;
+}
+
+#saldo {
+    margin-top: 0.4em;
+    background-color: #000000;
+    width: 240px;
+    max-width: 240px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.6em;
+    margin-bottom: 1em;
+}
+
+#saldo:hover {
+    background-color: #2a2a2a;
+}
+
+
+#add {
+    background-color: #000000;
+    width: 120px;
+    max-width: 120px;
+    height: 32px;
+    max-height: 32px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-bottom: 1em;
+    margin-left: 0.6em;
+}
+
+#add:hover {
+    background-color: #2a2a2a;
+}
+
+#add p {
+    font-size: 15px;
+}
+.submit {
+    display: flex;
+}
+
+.euro {
+    position: relative;
+}
+
+.euro input {
+    padding-left:18px;
+}
+
+#money {
+    padding: 0;
+    height: 32px;
+    max-height: 32px;
+    width: 110px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f7f7f7;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.5px 4px;
+}
+
+.recent {
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 1300px;
+}
+
+.recent thead tr {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    text-align: left;
+}
+
+.recent th, .recent td {
+    padding: 15px 15px;
+}
+
+.view button {
+    background-color: #000000;
+    width: 60px;
+    max-width: 60px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+    margin-right: 40px;
+}
+
+.view button:hover {
+    background-color: #2a2a2a;
+}
+
+
+.specOrder {
+    display: flex;
+}
+
+#orderInfo {
+    padding-top: 1.8em;
+}
+
+#orderInfo p {
+    font-weight: normal;
+}
+
+.oi {
+    color: white;
+    font-weight: bold;
+}
+
+#end {
+    font-weight: bold;
+    border-top: dashed 2px rgba(0, 0, 0, 0.10);
+}
+
+.item_desc{
+    padding-top: 2em;
+    width: 100%;
+    text-align: left;
+    margin: .2em;
+}
+
+#item_t{
+    font-weight: bold;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+#profPic{
+    background-color: #000000;
+    width: 65px;
+    height: 25px;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-bottom: 0.5em;
+}
+
+#profPic p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.table > .th.tr{
+    margin-top: 1em;
+    background-color: #3a3a3a;
+    color: white;
+    font-size: 1em;
+}
+
+img.td{
+    width: 8em;
+    height: 8em;
+}
+
+@media (max-width: 1500px){
+    .resp1500{
+        display: none;
+    }
+
+    main{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px){
+    main{
+        flex-direction: column;
+    }
+
+    .leftHeader h1{
+        margin-left: 0em;
+    }
+
+    .container{
+        display: inline;
+        margin-bottom: 2em;
+    }
+
+    .container ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container button{
+        width: auto;
+        padding: 1em;
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recentOrders > h2{
+        margin-left: .5em;
+    }
+}

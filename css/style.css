@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@300&display=swap');
+
+.underline{
+    text-decoration: underline;
+}
+
+#messages{
+    margin: 1em;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+*{
+    font-family: 'Open Sans', 'Raleway', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: inherit;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: 1em; 
+}
+
+body header {
+    background: #ffffff;
+    padding: 0 1em;
+    height: 5em;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.5px 4px;
+}
+
+footer {
+    background-color: #ededed;
+    color: black;
+    height: 4em;
+    line-height: 4em;
+    padding-left: 1em;  
+    vertical-align: middle;
+}
+
+header img{
+    height: 1.1em;
+    width: auto;
+    margin-right: .5em;
+}
+
+img{
+    vertical-align: middle;
+}
+
+h2{
+    font-weight: 100;
+}
+
+.hidden{
+    display: none;
+}
+
+/* --------------------------------------- */
+/*           Header Navigation             */
+/* --------------------------------------- */
+
+#responsive_cart{
+    display: none;
+}
+
+#leftHeader h1{
+    margin-left: 1.5em;
+}
+
+#hamburguer{
+  width: 3em;
+  height: 3em;
+  padding: 0;
+  
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hamburguer_trace{
+  width: 90%;
+
+  background-color: #2a2a2a;
+  border-radius:10px;
+  margin: 3px;
+  height: 4px;
+}
+
+#btn_cart {
+    background-color: black;
+    color: white;
+}
+
+#btn_cart:hover {
+    background-color: #2a2a2a;
+}
+
+#login:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+#register:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+#search:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+#search{
+    width: 7em;
+    text-align: left;
+    transition: 0.5s;
+}
+
+#search.active{
+    width: 40em;
+}
+
+#search input{
+    background-color: transparent;
+}
+
+/* --------------------------------------- */
+/*                  Filters                */
+/* --------------------------------------- */
+
+
+
+/* --------------------------------------- */
+/*                  Listagens              */
+/* --------------------------------------- */
+
+#lists{
+    margin: 0em 1.5em 3em 1.5em;
+}
+
+#lists h2{
+    color: grey;
+    font-size: .9em;
+}
+
+/* --------------------------------------- */
+/*                  Food Type              */
+/* --------------------------------------- */
+
+#rest_categ{
+    margin-bottom: 3em;
+}
+
+#rest_categ ul li {
+    transition: transform .2s;
+}
+
+#rest_categ ul li:hover {
+    transform: scale(1.2);
+}
+
+#rest_categ h1{
+    font-size: 1.4em;
+    text-align: center;
+    margin: 1em;
+}
+
+#rest_categ img{
+    height: 3.5em;
+}
+
+/* --------------------------------------- */
+/*                  Restaurants            */
+/* --------------------------------------- */
+
+.list ul a, .list ul button{
+    transition: transform .2s, box-shadow .2s;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: 1em; 
+    cursor: pointer;
+}
+
+.list ul a:hover, .list ul button:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.32) 0.5px 0.5px 4px;
+}
+
+#menus .list ul img{
+    width: 250px;
+    height: 250px;
+}
+
+.list ul img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.32) 0px 0.5px 4px;
+}
+
+.list ul .item_description{
+    width: 100%;
+    text-align: left;
+    margin: .2em;
+}
+
+.list ul #item_title{
+    font-weight: bold;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+#rest_rating{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    background-color: rgb(228, 227, 227);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+}
+
+/* --------------------------------------- */
+/*               Side Bar                  */
+/* --------------------------------------- */
+
+#sideBar ul{
+    background-color: whitesmoke;
+}
+
+#sideBar:not(.hidden){
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#sideBar ul li:first-child button {
+    background-color: black;
+    color: white;
+}
+
+#sideBar ul button{
+    font-weight: bold;
+}
+
+#sideBar ul img{
+    margin-right: 1em;
+}
+
+.sideBarButton{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 3.5em;
+}
+
+#outsideSideBar{
+    flex: 1;
+    cursor: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+/*
+
+*/
+
+#rest_img{
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+}
+
+#rest_header{
+    margin: 1.5em 2em 4em 2em;
+}
+
+#rating img{
+    height: 1em;
+    margin-right: .3em;
+}
+
+.sticky{
+    position: sticky;
+    top: 2em;
+    display: flex;
+    margin-left: 2em;
+    align-self: start
+}
+
+#rest_header h1 img {
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 0.5px 4px;
+    margin-right: .3em;
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: cover;
+}
+
+#rest_menus li{
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+
+#rest_menus li.underline{
+    font-size: 1.25em;
+}
+
+#rest_menus ul li a:hover {
+    color: grey;
+}
+
+#menus .list ul button img{
+    box-shadow: none;
+}
+
+.list{
+    margin-bottom: 4.5em;
+}
+
+.list h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.list h2{
+    text-align: center;
+}
+
+input[type="radio"]{
+    /* Hide the actual radio */
+    display: none
+}
+
+input[type="radio"] + label::before{
+    /* Show a styled radio before label*/
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+}
+
+input[type="radio"]:checked + label::before {
+    background: radial-gradient(black 0%, black 40%, transparent 50%, transparent);
+    border-color: black;
+}
+
+#rest_filters h1{
+    margin-bottom: 1.5em;
+}
+
+#rest_filters li *{
+    margin-bottom: 1em;
+}
+
+#reviews{
+    border-top: darkgrey 1px solid;
+    padding-top: 2.5em;
+    margin: 0em 2em 4em 2em;
+}
+
+#reviews ul{
+    margin-top: 2em;
+}
+
+#reviews li{
+    border-radius: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkgrey;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#review_user{
+    font-weight: bold;
+}
+
+#reviews_details{
+    display: flex;
+    align-items: center;
+}
+
+#reviews_details img{
+    width: 1em;
+    height: 1em;
+    margin-right: .3em;
+}
+
+#reviews_details img:last-of-type{
+    margin-right: 1em;
+}
+
+#reviews p{
+    margin-top: 1em;
+}
+
+#reviews h2{
+    font-weight: 100;
+}
+
+#review_answer{
+    margin-top: 1em;
+}
+
+#review_answer h1{
+    color: darkred;
+}
+
+#rest_not_found {
+    text-align: center;
+    margin: 5em auto;
+}
+
+#rest_not_found h2{
+    font-weight: 100;
+    font-size: 1em;
+}
+
+#product_popup:not(.hidden){
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#product_popup > button{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    cursor: default;
+}
+
+#product_popup section{
+    z-index: 1;
+    background-color: white;
+    width: 70%;
+    max-width: 500px;
+    padding: 2em;
+}
+
+#product_popup img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: auto;
+}
+
+#custom_input_number{
+    display: flex;
+    justify-content: space-between;
+}
+
+#custom_input_number button{
+    margin: 0;
+    padding: .7em;
+    color: darkred;
+    background-color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#custom_input_number #place_product{
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-weight: 100;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.close{
+    position: absolute;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#responsive_search{
+    display: none;
+}

@@ -1,0 +1,92 @@
+.table {
+    grid-column-end: span 2;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: .8rem;
+    margin: .5em;
+    margin-bottom: 1.5em;
+    line-height: 1.5;
+    border-bottom: 1px solid #d0d0d0;
+    flex: 1 1 auto;
+}
+  
+.th {
+    display: none;
+    font-weight: 700;
+    background-color: #f2f2f2;
+}
+  
+.th > .td {
+    white-space: normal;
+    justify-content: center;
+}
+  
+.tr {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+  
+.tr:nth-of-type(even), .tr:nth-of-type(even) select {
+    background-color: #f2f2f2;
+}
+  
+.tr:nth-of-type(odd), .tr:nth-of-type(odd) select{
+    background-color: #ffffff;
+}
+
+
+select{
+    border-bottom: 1px solid #d0d0d0;
+    text-align: center;
+}
+
+form.tr .td:last-child{
+    font-weight: bold;
+}
+  
+.td {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0.5em;
+    word-break: break-word;
+    overflow: hidden;
+    min-width: 0px;
+    border-bottom: 1px solid #d0d0d0;
+    justify-content: center;
+    align-items: center;
+}
+
+#table_title{
+    grid-column-end: span 2;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+.tr img{
+    width: 4em;
+    height: 4em;
+    object-fit: cover;
+    margin: .5em;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.5px 4px;
+}
+
+@media (max-width: 1500px){
+    .resp1500{
+        display: none;
+    }
+
+    main{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px){
+    .td button{
+        font-size: .6em;
+    }
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@300&display=swap');
+
+.hidden{
+    display: none;
+}
+
+*{
+    font-family: 'Open Sans', 'Raleway', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-align: center;
+}
+
+#messages{
+    text-align: center;
+}
+
+section#forms a:hover {
+    text-decoration: underline;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    text-align: center;
+    background: #ffffff;
+    height: 5em;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.5px 4px;
+    margin-bottom: 2em;
+}
+
+header h1 {
+    padding-top: 0.5em;
+}
+
+section#forms {
+    margin: 1em auto;
+    width: 450px;
+    padding: 3em;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.5px 4px;
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+input{
+    margin-bottom: 0.5em;
+    padding: 0.80em;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    transition: background 0.25s, border-color 0.25s;
+}
+
+button {
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+    background-color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.4em;
+    margin-bottom: 1em;
+}
+
+button:hover {
+    background-color: #2a2a2a;
+}
+
+input:focus {
+    border-color: #2a2a2a;
+    background: white;
+}
+
+footer {
+    margin-top: 1em;
+    background-color: #ededed;
+    color: black;
+    height: 4em;
+    line-height: 4em;
+    padding-left: 1em;
+    vertical-align: middle;
+}
+
+@media(max-width: 600px){
+    section#forms{
+        width: 70%;
+    }
+}

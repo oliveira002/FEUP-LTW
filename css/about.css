@@ -1,0 +1,88 @@
+#who {
+    text-align: center;
+    padding: 8.5em 0em;
+    background-image: url("../imgs/bgimg.jpg");
+    grid-column-end: span 2;
+    margin-bottom: 4em;
+}
+
+#who h1 {
+    font-size: 2.5em;
+}
+
+#about h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 2em;
+}
+
+#about h2{
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+#about img{
+    object-fit: cover;
+    width: 25em;
+    height: 35em;
+}
+
+.about_card{
+    margin: 0em 7em;
+    margin-bottom: 7em;
+}
+
+.about_info{
+    font-size: 1.2em;
+}
+
+#about_costumer .about_info,
+#about_deliverman .about_info{
+    padding-left: 10em;
+}
+
+#about_owner .about_info{
+    padding-right: 10em;
+}
+
+.about_info button{
+    background-color: black;
+    width: auto;
+    font-weight: bold;
+    color: white;
+    margin: 2em;
+}
+
+@media (max-width: 1200px){
+    #about_costumer, #about_owner, #about_deliverman{
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+    }
+
+    #about_costumer, #about_deliverman{
+        margin-bottom: 4em;
+    }
+
+    /* Can't be just .about_info because of specificity*/
+    #about_costumer .about_info, 
+    #about_owner .about_info,
+    #about_deliverman .about_info{
+        padding-left: 0em;
+        padding-top: 3em;
+        padding-right: 0em;
+    }
+
+    #about_owner img{
+        order: 1;
+    }
+
+    #about_owner .about_info{
+        order: 2;
+    }
+
+    #about_owner, #about_deliverman{
+        margin-top: 5em;
+    }
+}

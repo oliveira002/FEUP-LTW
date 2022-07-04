@@ -1,0 +1,274 @@
+/* --------------------------------------- */
+/*                  Header                 */
+/* --------------------------------------- */
+
+body, html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#leftHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+#options {
+    display: flex;
+    flex-direction: row;
+}
+
+/* --------------------------------------- */
+/*                  SideBar                */
+/* --------------------------------------- */
+
+#cartBar{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 19.5em;
+    padding: 1em;
+    background-color: white;
+    overflow-y: scroll;
+    border-left: darkgrey 1px solid;
+}
+
+#cartBar h2, #cartBar p{
+    margin-top: 4em;
+    font-size: 1em;
+}
+
+#cartBar a{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#cb_check button{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 3em;
+    background-color: black;
+    color: white;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.cb_entry:first-of-type{
+    border-top: darkgrey 1px solid;
+}
+
+.cb_entry{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: darkgrey 1px solid;
+    padding: .5em;
+}
+
+.cbe_prod img{
+    width: 5em;
+    height: 5em;
+    object-fit: cover;
+}
+
+.cb_entry > img{
+    width: 1em;
+    height: 1em;
+    margin: auto;
+    cursor: pointer;
+}
+
+.cbe_prod{
+    position: relative;
+}
+
+.cbe_prod span{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-20%, -50%);
+    background-color: black;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
+
+.cbe_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cbe_details span:first-of-type{
+font-size: .8em;
+}
+
+#sideBar{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#sideBar ul{
+    display: flex;
+    flex-direction: column;
+    width: 18em;
+    padding: 1em;
+}
+
+#sideBar ul li:first-child{
+    margin-bottom: .3em;
+}
+
+#sideBar ul li {
+    font-size: 1.3em;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+#sideBar ul li a{
+    color: black;
+}
+
+/* --------------------------------------- */
+/*                 Categories              */
+/* --------------------------------------- */
+
+#rest_categ{
+    grid-column-end: span 2;
+}
+
+#rest_categ ul{
+    list-style-type: none;
+    margin: 0em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 0.5em;
+}
+
+#rest_categ ul li button{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em .8em;
+    gap: .3em;
+    background-color: white;
+}
+
+/* --------------------------------------- */
+/*                  Restaurants            */
+/* --------------------------------------- */
+
+.list ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em;
+}
+
+.list ul a, .list ul button{
+    position: relative;
+    width: 20em;
+    border: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/**
+
+*/
+
+#rest_header div:first-of-type{
+    display: flex;
+}
+
+#rest_img{
+    grid-column-end: span 2;
+}
+
+#rest_header{
+    grid-column-end: span 2;
+}
+
+#about{
+    grid-column-end: span 2;
+}
+
+.about_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_card{
+    display: flex;
+}
+
+#about_owner img{
+    order: 2;
+}
+
+#search{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#search input{
+    flex: 1;
+}
+
+#rest_filters{
+    display: flex;
+    flex-direction: column;
+}
+
+#rest_filters li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+#reviews{
+    grid-column-start: 2;
+}
