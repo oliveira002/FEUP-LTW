@@ -1,4 +1,10 @@
-# LTW 21/22 Project
-~ grade (19.37/20) 
+# LTW 21/22 
 
-~ email@gmail.com / 1234
+## Course Grades
+
+| | Project 1 |
+| --- | --- |
+| Grade | **19.37** |
+
+### User Credentials:
+ email@gmail.com / 1234
